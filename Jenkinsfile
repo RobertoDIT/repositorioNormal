@@ -10,7 +10,7 @@ pipeline {
     }
     stage('desplegar') {
       steps {
-        deploy adapters: [tomcat7(credentialsId: '40aa2f7f-ac43-4d11-95a9-30964c40f24b', path: '', url: 'http://localhost:8081')], contextPath: 'JenkinsJSF', war: '**/*.war'  
+        deploy adapters: [tomcat7(credentialsId: '7a580f23-3bb3-4f8a-89f7-c896e4259bc5', path: '', url: 'http://localhost:8081')], contextPath: 'JenkinsNormal', war: '**/*.war'
       }
     }    
   }
